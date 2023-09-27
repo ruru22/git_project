@@ -2,15 +2,191 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Portfolio</title>
+    <meta name="description" content="ブランドページを通してWebページの基本構造、レイアウトの組み方を身につけましょう">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header id="header" class="header">
+        <h1 class="header-logo">Portfolio</h1>
 
-    
-<script src="main.js"></script>    
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a></li>
+                <li class="nav-item"><a href="index.html#about">ABOUT</a></li>
+                <li class="nav-item"><a href="index.html#SKILL">SKILL</a></li>
+                <li class="nav-item"><a href="index.html#gall">GALLERY</a></li>
+            </ul>
+        </nav>
+        <div class="btn">
+            <div class="openbtn3"><span></span><span>MENU</span><span></span></div>
+        </div>
+        <nav class="header-nav-sp">
+            <ul class="nav-list-sp">
+                <li class="nav-item-sp"><a href="index.html">HOME</a></li>
+                <li class="nav-item-sp"><a href="index.html#about">ABOUT</a></li>
+                <li class="nav-item-sp"><a href="index.html#SKILL">SKILL</a></li>
+                <li class="nav-item-sp"><a href="index.html#gall">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="kv">
+        <div class="kv-img section-inner">
+            <img src="img/kv1.jpg" alt="キービジュアル">
+        </div>
+    </div>
+    <div class="kv-sp">
+        <div class="kv-img-sp">
+            <img src="img/kv-sp.jpg" alt="キービジュアル">
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="concept section-wrap" id="about">
+            <div class="section-inner about">
+                <h2 class="section-ttl">ABOUT</h2>
+                <p class="concept-copy">SAYAKA ISHIHARA</p>
+                <p class="concept-text">
+					コーディングはもちろん<br class="br-sp">ノーコードツールを使用したWeb制作や<br>
+					photoshopやXDでWebデザイン、<br class="br-sp">バナー作成など承っております。<br>
+                    </p>
+            </div>
+        </section>
+
+        <section class="items section-wrap" id="SKILL">
+            <div class="section-inner">
+                <h2 class="section-ttl">SKILL</h2>
+
+                <div class="items-wrap">
+                    <div class="items-item">
+                        <div class="items-img">
+                            <img src="img/pc1.jpeg" alt="言語の写真">
+                        </div>
+                    
+                        <div class="items-content">
+                            <h3 class="items-ttl">使用言語</h3>
+                            <p class="items-txt">HTML<br>
+								CSS<br>
+								Javascript
+								<br>
+                                jQuery
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-item">
+                        <div class="items-img">
+                            <img src="img/ore.jpeg" alt="pc1">
+                        </div>
+                    
+                        <div class="items-content">
+                            <h3 class="items-ttl">使用ツール</h3>
+                            <p class="items-txt">Adobe photoshop<br>
+								Adobe XD<br>
+								Visual Studio Code<br>
+								Deamweaver<br>
+								ペライチ<br>
+								studio<br>
+							</p>
+                        </div>
+                    </div>
+                    <div class="items-item">
+                        <div class="items-img">
+                            <img src="img/pc2.jpeg" alt="pc2">
+                        </div>
+                    
+                        <div class="items-content">
+                            <h3 class="items-ttl">保有資格</h3>
+                            <p class="items-txt">
+								日商簿記検定２級<br>						
+								秘書技能検定２級<br>
+								ITパスポート
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section-wrap" id="gall">
+            <div class="section-inner">
+                <h2 class="section-ttl">GALLERY</h2>
+                <div class="gallery-wrap">
+					<div class="gallery-item">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana1.png" alt="お店の写真">
+                    	</div>
+					</div>
+					<div class="gallery-item">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana2.png" alt="お店の写真">
+                    	</div>
+					</div>
+					<div class="gallery-item">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana3.png" alt="お店の写真">
+                    	</div>
+					</div>
+					<div class="gallery-item gedan">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana4.png" alt="お店の写真">
+                    	</div>
+					</div>
+					<div class="gallery-item gedan">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana5.png" alt="お店の写真">
+                    	</div>
+					</div>
+					<div class="gallery-item gedan">
+                    	<div class="gallery-img">
+                        	<img class="bana-open" src="img/bana6.png" alt="お店の写真">
+                    	</div>
+					</div>
+															   
+				</div>
+  			</div>
+            <!--モーダル部分ー-->
+            <div class="overlay back" id="js-overlay"></div>
+            <div class="modal" id="js-modal">
+  
+                <div class="modal-close__wrap">
+                    <button class="modal-close" id="js-close">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <img id = "zoomimg" src = "img/bana1.png">
+            </div>
+        <!--モーダル部分 ここまでー-->
+        </section>
+        <!--トップに戻るボタン-->
+        <a id="top" class="top" href="#header">top</a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <h2 class="section-ttl">Portfolio</h2>
+        </div>
+        <ul class="footer-list nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="index.html#about">ABOUT</a></li>
+            <li class="nav-item"><a href="index.html#SKILL">SKILL</a></li>
+            <li class="nav-item"><a href="index.html#gall">GALLERY</a></li>
+        </ul>
+        <small class="footer-cr">&copy; 2023 ruru22</small>
+    </foote>
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="main.js"></script> 
 </body>
 </html>
+
